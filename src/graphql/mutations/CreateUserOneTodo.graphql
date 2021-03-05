@@ -1,0 +1,10 @@
+mutation CreateUserOneTodo($data: TodoCreateInput!) {
+  createUserOneTodo(data: $data) {
+    id
+    createdAt
+    updatedAt
+    title
+    content
+    done
+  }
+}

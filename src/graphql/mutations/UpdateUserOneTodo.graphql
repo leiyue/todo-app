@@ -1,0 +1,10 @@
+mutation UpdateUserOneTodo($where: TodoWhereUniqueInput!, $data: TodoUpdateInput!) {
+  updateUserOneTodo(where: $where, data: $data) {
+    id
+    createdAt
+    updatedAt
+    title
+    content
+    done
+  }
+}

@@ -1,0 +1,20 @@
+query GetManyTodos(
+  $where: TodoWhereInput
+  $orderBy: [TodoOrderByInput!]
+  $first: Int
+  $last: Int
+  $before: TodoWhereUniqueInput
+  $after: TodoWhereUniqueInput
+) {
+  todos(where: $where, orderBy: $orderBy, first: $first, last: $last, before: $before, after: $after) {
+    id
+    createdAt
+    updatedAt
+    title
+    content
+    done
+    owner {
+      id
+    }
+  }
+}

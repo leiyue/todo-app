@@ -1,0 +1,13 @@
+query GetOneTodo($where: TodoWhereUniqueInput!) {
+  todo(where: $where) {
+    id
+    createdAt
+    updatedAt
+    title
+    content
+    done
+    owner {
+      id
+    }
+  }
+}

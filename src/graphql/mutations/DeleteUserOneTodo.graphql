@@ -1,0 +1,10 @@
+mutation deleteUserOneTodo($where: TodoWhereUniqueInput!) {
+  deleteUserOneTodo(where: $where) {
+    id
+    createdAt
+    updatedAt
+    title
+    content
+    done
+  }
+}
